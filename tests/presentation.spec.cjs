@@ -50,8 +50,11 @@ test('conteudo comercial, assets locais e ausencia de erros', async({page})=>{
   const text=await page.locator('body').innerText();
   expect(text).not.toMatch(/demonstração|enviar prévia|prévia concluída|nenhuma informação foi enviada|protótipo/i);
   for(const product of products) expect(text).toContain(product);
-  const images=await page.locator('img').evaluateAll(imgs=>imgs.map(i=>({src:i.src,ok:i.complete&&i.naturalWidth>0})));
-  expect(images.filter(i=>!i.ok)).toEqual([]);
+  // Lazy images must enter the viewport and finish loading before inspection.
+  for (const img of await page.locator('img').all()) {
+    await img.scrollIntoViewIfNeeded();
+    await expect.poll(() => img.evaluate(i => i.complete && i.naturalWidth > 0)).toBe(true);
+  }
   const anchors=await page.locator('a[href^="#"]').evaluateAll(links=>links.filter(a=>a.hash.length>1&&!document.getElementById(decodeURIComponent(a.hash.slice(1)))).map(a=>a.href));
   expect(anchors).toEqual([]);
   expect(badAssets).toEqual([]);expect(errors).toEqual([]);expect(external).toEqual([]);
