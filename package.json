@@ -1,0 +1,20 @@
+{
+  "name": "onex-landing-page",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Landing page OneX Data Center",
+  "scripts": {
+    "start": "node scripts/serve.cjs",
+    "build": "node scripts/build.cjs",
+    "test": "playwright test",
+    "test:report": "playwright show-report",
+    "release": "node scripts/release.cjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "@playwright/test": "^1.63.0"
+  }
+}

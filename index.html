@@ -1,0 +1,762 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OneX Data Center — Conectamos hoje e protegemos o amanhã</title>
+  <meta name="description" content="Infraestrutura, nuvem e comunicação em Minas Gerais: OneXcloud, VPS, servidor dedicado, colocation, telefonia e e-mail profissional em data centers próprios em Ipatinga e Belo Horizonte.">
+  <meta name="theme-color" content="#050505">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/montserrat-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <!-- Sprite: geometria vetorial da marca (reconstrução provisória, ver README) -->
+  <svg aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden">
+    <defs>
+      <path id="lg-o" d="M0 70Q0 30 40 30H152Q192 30 192 70V120Q192 160 152 160H40Q0 160 0 120ZM38 74Q38 62 50 62H142Q154 62 154 74V116Q154 128 142 128H50Q38 128 38 116Z"/>
+      <path id="lg-n" d="M229 160V66Q229 28 267 28H378Q416 28 416 66V160H378V72Q378 62 368 62H278Q268 62 268 72V160Z"/>
+      <path id="lg-e" d="M622 30H490Q451 30 451 69V121Q451 160 490 160H582L612 130H490V105H580L603 84H490V62H590Z"/>
+      <path id="lg-x" d="M637 28H697L758 100H698ZM805 0H865L776 102L752 74ZM693 116H773L829 192H777L733 145L690 192H637Z"/>
+      <path id="lg-sub" d="M406.8 196.8V238H402.4V233.9Q399.5 238.7 394.2 238.7Q389.1 238.7 386.1 234.3Q383.3 230.3 383.3 223.9Q383.3 216.6 386.8 212.5Q389.7 209.2 394.1 209.2Q399.3 209.2 402.3 214V196.8ZM402.3 218.4Q399.7 213 395.2 213Q391.7 213 389.7 216.1Q387.8 219 387.8 224Q387.8 229.6 390.3 232.6Q392.3 235.1 395.4 235.1Q399.6 235.1 402.3 229.8Z M457.8 210.1V231.2Q457.8 235.3 460.4 235.3Q461.2 235.3 462.2 235L462 238.4Q460.8 238.6 459.7 238.6Q454.2 238.6 453.6 233.6Q450.6 238.9 445.2 238.9Q440.1 238.9 437.1 234.5Q434.3 230.5 434.3 224Q434.3 217 438.1 212.9Q441.2 209.4 445.6 209.4Q450.7 209.4 453.6 214.4L454.4 210.1ZM453.3 218.5Q450.8 213.2 446.5 213.2Q443 213.2 440.9 216.3Q438.9 219.3 438.9 224.1Q438.9 229.9 441.2 232.8Q443.2 235.2 446.2 235.2Q450.7 235.2 453.3 229.6Z M493.2 200.2V209.9H499.9V213.4H493.2V230.7Q493.2 235.3 497.1 235.3Q499.1 235.3 500.6 234.9L500.4 238.4Q498.5 238.7 496.1 238.7Q488.8 238.7 488.8 231.5V213.4H484.2V209.9H488.8V201.2Z M547.8 210.1V231.2Q547.8 235.3 550.4 235.3Q551.1 235.3 552.2 235L552 238.4Q550.8 238.6 549.6 238.6Q544.2 238.6 543.6 233.6Q540.6 238.9 535.2 238.9Q530 238.9 527.1 234.5Q524.3 230.5 524.3 224Q524.3 217 528.1 212.9Q531.2 209.4 535.5 209.4Q540.7 209.4 543.6 214.4L544.4 210.1ZM543.3 218.5Q540.8 213.2 536.4 213.2Q533 213.2 530.9 216.3Q528.9 219.3 528.9 224.1Q528.9 229.9 531.2 232.8Q533.1 235.2 536.2 235.2Q540.7 235.2 543.3 229.6Z M633.5 217.6 629.1 218.8Q627.9 212.8 622.9 212.8Q619 212.8 617.1 216Q615.3 218.9 615.3 223.9Q615.3 229.7 617.6 232.7Q619.6 235.2 622.9 235.2Q628.2 235.2 629.4 229L633.7 230.4Q631.3 238.7 622.8 238.7Q616.8 238.7 613.5 234.3Q610.7 230.4 610.7 224Q610.7 216.8 614.5 212.7Q617.7 209.2 622.8 209.2Q627.2 209.2 630 211.7Q632.5 213.8 633.5 217.6Z M682.6 224.6H662.9Q662.9 230 665.5 232.9Q667.6 235.3 671.2 235.3Q676.7 235.3 678.3 229.6L682.4 231Q679.7 238.7 671.1 238.7Q665 238.7 661.6 234.3Q658.6 230.4 658.6 224Q658.6 217 662.5 212.8Q665.8 209.2 670.7 209.2Q676.4 209.2 679.7 213.5Q682.6 217.4 682.6 223.6ZM678.3 221.4Q677.9 216.9 675.7 214.6Q673.8 212.7 670.8 212.7Q667.3 212.7 665.2 215.3Q663.3 217.7 663 221.4Z M714.5 209.9V215Q718.9 209.3 724.3 209.3Q728.1 209.3 730.2 211.7Q732.1 213.8 732.1 217.3V238H727.6V218.9Q727.6 213.2 722.8 213.2Q718.6 213.2 714.6 218.8V238H710.2V209.9Z M767.2 200.2V209.9H773.9V213.4H767.2V230.7Q767.2 235.3 771.1 235.3Q773.1 235.3 774.6 234.9L774.4 238.4Q772.4 238.7 770 238.7Q762.8 238.7 762.8 231.5V213.4H758.2V209.9H762.8V201.2Z M822.3 224.6H802.7Q802.7 230 805.2 232.9Q807.4 235.3 810.9 235.3Q816.5 235.3 818 229.6L822.2 231Q819.4 238.7 810.8 238.7Q804.7 238.7 801.3 234.3Q798.3 230.4 798.3 224Q798.3 217 802.2 212.8Q805.5 209.2 810.5 209.2Q816.1 209.2 819.4 213.5Q822.3 217.4 822.3 223.6ZM818 221.4Q817.6 216.9 815.4 214.6Q813.5 212.7 810.5 212.7Q807 212.7 804.9 215.3Q803 217.7 802.8 221.4Z M863.3 209.3 863 213.6Q860.1 213.6 857.7 216Q855.5 218.2 854.4 221.9V238H849.9V209.9H854.2V217.1Q857.2 209.3 863.3 209.3Z"/>
+      <g id="lg-word" fill-rule="evenodd">
+        <use href="#lg-o"/><use href="#lg-n"/><use href="#lg-e"/><use href="#lg-x"/>
+      </g>
+      <g id="lg-full" fill-rule="evenodd">
+        <use href="#lg-o"/><use href="#lg-n"/><use href="#lg-e"/><use href="#lg-x"/><use href="#lg-sub"/>
+      </g>
+      <linearGradient id="g-side" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#3a3a40"/>
+        <stop offset="0.55" stop-color="#1c1c20"/>
+        <stop offset="1" stop-color="#0d0d0f"/>
+      </linearGradient>
+      <linearGradient id="g-xface" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#ffa268"/>
+        <stop offset="0.45" stop-color="#ff6418"/>
+        <stop offset="1" stop-color="#d94b0a"/>
+      </linearGradient>
+    </defs>
+  </svg>
+
+  <header class="site-header" id="topo">
+    <div class="container">
+      <a class="brand" href="#topo" aria-label="OneX Data Center — início" id="header-logo">
+        <!-- aplicação cromática desta versão (X laranja) sobre as mesmas peças do sprite; não é um novo vetor oficial -->
+        <svg viewBox="0 0 866 250" role="img" aria-hidden="true" focusable="false">
+          <g fill="#F5F5F5" fill-rule="evenodd"><use href="#lg-o"/><use href="#lg-n"/><use href="#lg-e"/><use href="#lg-sub"/></g>
+          <g fill="#FF6418" fill-rule="evenodd"><use href="#lg-x"/></g>
+        </svg>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu">
+        <span aria-hidden="true"></span>
+      </button>
+
+      <nav class="nav" id="menu-principal" aria-label="Principal">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#solucoes">Soluções</a></li>
+          <li><a class="nav__link" href="#infraestrutura">Infraestrutura</a></li>
+          <li><a class="nav__link" href="#sobre">Sobre</a></li>
+          <li><a class="nav__link" href="#contato">Contato</a></li>
+          <li>
+            <a class="nav__link nav__link--ext" href="https://nimbus.onexdatacenter.com.br/" target="_blank" rel="noopener" data-link="nimbus">
+              Painel Nimbus
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg>
+              <span class="visually-hidden">(abre em nova aba)</span>
+            </a>
+          </li>
+        </ul>
+        <a class="btn btn--primary btn--sm nav__cta" href="#contato">Fale com a OneX</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- ============================== HERO ============================== -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero__copy">
+          <p class="eyebrow">OneX Data Center</p>
+          <h1 id="hero-title"><span class="hero__line">Conectamos hoje</span> <span class="hero__line">e protegemos</span> <span class="hero__line">o amanhã</span></h1>
+          <p class="hero__desc">Infraestrutura, nuvem e comunicação para sua empresa seguir em frente. Com a OneX, seus dados têm endereço e sua operação tem uma equipe por perto.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#solucoes">Conheça nossas soluções</a>
+            <a class="btn btn--ghost" href="#contato">Fale com a OneX</a>
+          </div>
+          <p class="hero__facts"><a class="link-arrow" href="#infraestrutura">Onde seus dados vão estar? <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+        </div>
+
+        <div class="hero__art" aria-hidden="true">
+          <!-- X estrutural com conexões e racks: continuação visual da intro -->
+          <svg class="xart" viewBox="0 0 640 560" focusable="false">
+            <defs>
+              <linearGradient id="g-xart-face" x1="0" y1="0" x2="0.7" y2="1">
+                <stop offset="0" stop-color="#ffc194"/>
+                <stop offset="0.35" stop-color="#ff7a30"/>
+                <stop offset="0.7" stop-color="#ff6418"/>
+                <stop offset="1" stop-color="#b83a05"/>
+              </linearGradient>
+              <linearGradient id="g-xart-edge" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="rgba(255,255,255,0.8)"/>
+                <stop offset="0.5" stop-color="rgba(255,255,255,0.14)"/>
+                <stop offset="1" stop-color="rgba(0,0,0,0.55)"/>
+              </linearGradient>
+              <linearGradient id="g-xart-side" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#4a4a52"/>
+                <stop offset="0.5" stop-color="#232327"/>
+                <stop offset="1" stop-color="#0f0f11"/>
+              </linearGradient>
+              <radialGradient id="g-xart-glow" cx="0.5" cy="0.5" r="0.5">
+                <stop offset="0" stop-color="#ff6418" stop-opacity="0.4"/>
+                <stop offset="0.6" stop-color="#ff6418" stop-opacity="0.1"/>
+                <stop offset="1" stop-color="#ff6418" stop-opacity="0"/>
+              </radialGradient>
+              <linearGradient id="g-rack-front" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#19191d"/>
+                <stop offset="1" stop-color="#0d0d0f"/>
+              </linearGradient>
+              <linearGradient id="g-rack-unit" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#26262b"/>
+                <stop offset="1" stop-color="#151518"/>
+              </linearGradient>
+              <pattern id="p-grid" width="32" height="32" patternUnits="userSpaceOnUse">
+                <path d="M32 0H0V32" fill="none" stroke="rgba(255,255,255,0.028)" stroke-width="1"/>
+              </pattern>
+            </defs>
+
+            <rect width="640" height="560" fill="url(#p-grid)"/>
+            <circle cx="392" cy="262" r="190" fill="url(#g-xart-glow)"/>
+
+            <!-- racks com profundidade: face frontal, lateral direita e topo -->
+            <g id="xart-racks">
+              <g transform="translate(40 66)">
+                <polygon points="112,0 126,-10 126,166 112,176" fill="#0a0a0c" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+                <polygon points="0,0 14,-10 126,-10 112,0" fill="#24242a" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+                <rect class="xart__rack" width="112" height="176" rx="3" fill="url(#g-rack-front)"/>
+                <g fill="url(#g-rack-unit)" stroke="rgba(255,255,255,0.09)">
+                  <rect x="10" y="12" width="92" height="16" rx="2"/><rect x="10" y="34" width="92" height="16" rx="2"/><rect x="10" y="56" width="92" height="28" rx="2"/>
+                  <rect x="10" y="90" width="92" height="16" rx="2"/><rect x="10" y="112" width="92" height="16" rx="2"/><rect x="10" y="134" width="92" height="30" rx="2"/>
+                </g>
+                <g class="xart__led"><circle cx="18" cy="20" r="1.7"/><circle cx="18" cy="42" r="1.7"/><circle cx="18" cy="98" r="1.7"/><circle cx="18" cy="120" r="1.7"/></g>
+                <g fill="#7ddf9a" opacity="0.6"><circle cx="24" cy="20" r="1.3"/><circle cx="24" cy="98" r="1.3"/></g>
+                <g stroke="rgba(255,255,255,0.1)"><path d="M30 66h56M30 73h40M30 144h56M30 151h44M30 158h30"/></g>
+                <rect class="xart__port" x="100" y="58" width="10" height="12" rx="1.5"/>
+              </g>
+
+              <g transform="translate(40 306)">
+                <polygon points="112,0 126,-10 126,190 112,200" fill="#0a0a0c" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+                <polygon points="0,0 14,-10 126,-10 112,0" fill="#24242a" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+                <rect class="xart__rack" width="112" height="200" rx="3" fill="url(#g-rack-front)"/>
+                <g fill="url(#g-rack-unit)" stroke="rgba(255,255,255,0.09)">
+                  <rect x="10" y="12" width="92" height="16" rx="2"/><rect x="10" y="34" width="92" height="28" rx="2"/><rect x="10" y="68" width="92" height="16" rx="2"/>
+                  <rect x="10" y="90" width="92" height="16" rx="2"/><rect x="10" y="112" width="92" height="40" rx="2"/><rect x="10" y="158" width="92" height="16" rx="2"/>
+                </g>
+                <g class="xart__led"><circle cx="18" cy="20" r="1.7"/><circle cx="18" cy="76" r="1.7"/><circle cx="18" cy="98" r="1.7"/><circle cx="18" cy="166" r="1.7"/></g>
+                <g fill="#7ddf9a" opacity="0.6"><circle cx="24" cy="76" r="1.3"/><circle cx="24" cy="166" r="1.3"/></g>
+                <g stroke="rgba(255,255,255,0.1)"><path d="M30 44h56M30 51h40M30 122h56M30 129h44M30 136h30M30 143h50"/></g>
+                <rect class="xart__port" x="100" y="108" width="10" height="12" rx="1.5"/>
+              </g>
+
+              <g transform="translate(500 380)">
+                <polygon points="100,0 112,-9 112,141 100,150" fill="#0a0a0c" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+                <polygon points="0,0 12,-9 112,-9 100,0" fill="#24242a" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+                <rect class="xart__rack" width="100" height="150" rx="3" fill="url(#g-rack-front)"/>
+                <g fill="url(#g-rack-unit)" stroke="rgba(255,255,255,0.09)">
+                  <rect x="10" y="12" width="80" height="16" rx="2"/><rect x="10" y="34" width="80" height="16" rx="2"/><rect x="10" y="56" width="80" height="28" rx="2"/>
+                  <rect x="10" y="90" width="80" height="16" rx="2"/><rect x="10" y="112" width="80" height="26" rx="2"/>
+                </g>
+                <g class="xart__led"><circle cx="18" cy="20" r="1.7"/><circle cx="18" cy="42" r="1.7"/><circle cx="18" cy="98" r="1.7"/></g>
+                <g fill="#7ddf9a" opacity="0.6"><circle cx="24" cy="42" r="1.3"/></g>
+                <g stroke="rgba(255,255,255,0.1)"><path d="M30 66h44M30 73h32M30 120h44M30 127h28"/></g>
+                <rect class="xart__port" x="14" y="-6" width="12" height="10" rx="1.5" transform="translate(6 0)"/>
+              </g>
+            </g>
+
+            <!-- trilhas: terminais claros nos racks, convergência no X -->
+            <path class="xart__trace--dim xart__trace" d="M152 100H206L246 140V196M152 400H236L300 336M556 380V330L500 278"/>
+            <path class="xart__trace" id="xart-t1" d="M152 130H222L262 170V214L318 270"/>
+            <path class="xart__trace" id="xart-t2" d="M152 420H244L318 346"/>
+            <path class="xart__trace" id="xart-t3" d="M462 300 520 358V376"/>
+            <path class="xart__trace" d="M392 118V78H460" opacity="0.4"/>
+            <path class="xart__trace" d="M392 386V450H336" opacity="0.4"/>
+
+            <!-- X com extrusão, luz do alto à esquerda e sombra de apoio -->
+            <ellipse cx="400" cy="424" rx="150" ry="16" fill="rgba(0,0,0,0.55)"/>
+            <g transform="translate(240 150) scale(1.35)">
+              <g class="xart__side" fill="url(#g-xart-side)" fill-rule="evenodd" transform="translate(-637 0)">
+                <use href="#lg-x" transform="translate(-10 10)"/><use href="#lg-x" transform="translate(-9 9)"/><use href="#lg-x" transform="translate(-8 8)"/><use href="#lg-x" transform="translate(-7 7)"/><use href="#lg-x" transform="translate(-6 6)"/><use href="#lg-x" transform="translate(-5 5)"/><use href="#lg-x" transform="translate(-4 4)"/><use href="#lg-x" transform="translate(-3 3)"/><use href="#lg-x" transform="translate(-2 2)"/><use href="#lg-x" transform="translate(-1 1)"/>
+              </g>
+              <g fill="url(#g-xart-face)" fill-rule="evenodd" transform="translate(-637 0)"><use href="#lg-x"/></g>
+              <g fill="none" stroke="url(#g-xart-edge)" stroke-width="1.4" stroke-linejoin="round" transform="translate(-637 0)"><use href="#lg-x"/></g>
+            </g>
+
+            <!-- pulsos (animação leve, pausada fora da tela e em aba oculta) -->
+            <use class="xart__pulse xart__pulse--1" href="#xart-t1"/>
+            <use class="xart__pulse xart__pulse--2" href="#xart-t2"/>
+            <use class="xart__pulse xart__pulse--3" href="#xart-t3"/>
+
+            <!-- nós nos terminais -->
+            <g>
+              <circle class="xart__node" cx="152" cy="130" r="4"/>
+              <circle class="xart__node" cx="318" cy="270" r="4"/>
+              <circle class="xart__node" cx="152" cy="420" r="4"/>
+              <circle class="xart__node" cx="318" cy="346" r="4"/>
+              <circle class="xart__node" cx="462" cy="300" r="4"/>
+              <circle class="xart__node" cx="520" cy="376" r="4"/>
+              <circle class="xart__node" cx="392" cy="78" r="3"/>
+              <circle class="xart__node" cx="392" cy="450" r="3"/>
+            </g>
+
+            <g font-family="JetBrains Mono, Consolas, monospace" font-size="9" fill="rgba(255,255,255,0.28)" letter-spacing="1.4">
+              <text x="40" y="50">RACK A</text>
+              <text x="40" y="290">RACK B</text>
+              <text x="500" y="364">RACK C</text>
+              <text x="468" y="74">REDE</text>
+              <text x="330" y="470" text-anchor="end">ENERGIA</text>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== SOLUÇÕES: EXPLORADOR ============================== -->
+    <section class="section explorer-section" id="solucoes" aria-labelledby="solucoes-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Soluções</p>
+          <h2 id="solucoes-title">Seis soluções. Um endereço em Minas Gerais.</h2>
+          <p class="lead">Escolha por onde começar. Cada solução funciona sozinha ou junto com as outras, na mesma estrutura e com a mesma equipe.</p>
+        </div>
+
+        <div class="explorer" id="explorer">
+          <div class="explorer__index" id="explorer-index" hidden></div>
+          <div class="explorer__panels" id="explorer-panels">
+          <details class="product" id="produto-onexcloud" data-product="onexcloud" open>
+            <summary class="product__summary">
+              <span class="product__num">01</span>
+              <span class="product__name">OneXcloud</span>
+              <span class="product__opener">Sua equipe conectada. Seus arquivos no lugar certo.</span>
+            </summary>
+            <div class="product__body">
+              <div class="product__art" aria-hidden="true">
+<svg viewBox="0 0 200 140" focusable="false">
+  <rect class="pa pa--slide-1" x="46" y="52" width="76" height="52" rx="6" fill="#1a1a1f" stroke="rgba(255,255,255,0.18)"/>
+  <rect class="pa pa--slide-2" x="58" y="42" width="76" height="52" rx="6" fill="#202026" stroke="rgba(255,255,255,0.2)"/>
+  <rect class="pa pa--slide-3" x="70" y="32" width="76" height="52" rx="6" fill="#26262d" stroke="rgba(255,255,255,0.24)"/>
+  <path class="pa pa--draw" d="M22 108H60L84 84H150" fill="none" stroke="#ff6418" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle class="pa pa--pop" cx="150" cy="84" r="4" fill="#ff8a45"/>
+  <circle class="pa pa--pop" cx="22" cy="108" r="4" fill="#ff8a45"/>
+</svg>
+              </div>
+              <div class="product__text">
+                <p class="product__kicker">01 · OneXcloud</p>
+                <h3 class="product__title">Sua equipe conectada. Seus arquivos no lugar certo.</h3>
+                <p class="product__desc">Nuvem corporativa hospedada no data center da OneX, em Minas Gerais: arquivos, calendários e contatos da equipe sincronizados, com conformidade com a LGPD, em uma plataforma baseada em Nextcloud.</p>
+                <ul class="product__features" aria-label="Recursos">
+                <li>1 TB compartilhado</li>
+                <li>1 usuário de e-mail corporativo</li>
+                <li>Até 5 GB para o site</li>
+                <li>Backup incluso</li>
+                <li>Baseada em Nextcloud</li>
+                </ul>
+                <p class="product__note">Configurações adicionais sob consulta.</p>
+                <div class="product__actions">
+                  <a class="btn btn--primary" href="https://api.whatsapp.com/send?phone=553140404888&amp;text=Ol%C3%A1%21%20Quero%20conversar%20sobre%20o%20OneXcloud%20para%20a%20minha%20equipe." target="_blank" rel="noopener" data-wa="onexcloud"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3Z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 1a4 4 0 0 1-2-2l1-1-1-2Z"/></svg>Conversar no WhatsApp<span class="visually-hidden"> sobre OneXcloud (abre em nova aba)</span></a>
+                  <a class="link-arrow" href="https://onexdc.com.br/produtos/" target="_blank" rel="noopener" data-link="catalog">Ver no catálogo oficial <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg><span class="visually-hidden">(abre em nova aba)</span></a>
+                </div>
+              </div>
+            </div>
+          </details>
+          <details class="product" id="produto-vps" data-product="vps">
+            <summary class="product__summary">
+              <span class="product__num">02</span>
+              <span class="product__name">VPS</span>
+              <span class="product__opener">Espaço para o próximo passo da sua aplicação.</span>
+            </summary>
+            <div class="product__body">
+              <div class="product__art" aria-hidden="true">
+<svg viewBox="0 0 200 140" focusable="false">
+  <rect x="34" y="24" width="132" height="92" rx="8" fill="none" stroke="rgba(255,255,255,0.16)"/>
+  <g fill="#202026" stroke="rgba(255,255,255,0.2)">
+    <rect class="pa pa--grow" style="--i:0" x="46" y="36" width="34" height="30" rx="4"/>
+    <rect class="pa pa--grow" style="--i:1" x="84" y="36" width="34" height="30" rx="4"/>
+    <rect class="pa pa--grow" style="--i:2" x="122" y="36" width="34" height="30" rx="4"/>
+    <rect class="pa pa--grow" style="--i:3" x="46" y="74" width="34" height="30" rx="4"/>
+    <rect class="pa pa--grow pa--hot" style="--i:4" x="84" y="74" width="34" height="30" rx="4"/>
+    <rect class="pa pa--grow" style="--i:5" x="122" y="74" width="34" height="30" rx="4"/>
+  </g>
+</svg>
+              </div>
+              <div class="product__text">
+                <p class="product__kicker">02 · VPS</p>
+                <h3 class="product__title">Espaço para o próximo passo da sua aplicação.</h3>
+                <p class="product__desc">Servidor virtual Linux com recursos definidos, para hospedar sistemas e crescer por etapas dentro da mesma estrutura. A virtualização separa hardware, hypervisor e máquinas virtuais, e cada VPS enxerga só os seus recursos.</p>
+                <ul class="product__features" aria-label="Recursos">
+                <li>2 vCPU</li>
+                <li>4 GB de RAM</li>
+                <li>120 GB de armazenamento</li>
+                <li>Transferência ilimitada</li>
+                <li>Contrato de 12 meses</li>
+                <li>Windows sob consulta</li>
+                </ul>
+                <p class="product__note">Outras configurações sob consulta.</p>
+                <div class="product__actions">
+                  <a class="btn btn--primary" href="https://api.whatsapp.com/send?phone=553140404888&amp;text=Ol%C3%A1%21%20Quero%20conversar%20sobre%20um%20VPS%20na%20OneX." target="_blank" rel="noopener" data-wa="vps"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3Z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 1a4 4 0 0 1-2-2l1-1-1-2Z"/></svg>Conversar no WhatsApp<span class="visually-hidden"> sobre VPS (abre em nova aba)</span></a>
+                  <a class="link-arrow" href="https://onexdc.com.br/produtos/virtualizacao/" target="_blank" rel="noopener" data-link="virtualization">Como funciona a virtualização <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg><span class="visually-hidden">(abre em nova aba)</span></a>
+                </div>
+              </div>
+            </div>
+          </details>
+          <details class="product" id="produto-dedicado" data-product="dedicado">
+            <summary class="product__summary">
+              <span class="product__num">03</span>
+              <span class="product__name">Servidor dedicado</span>
+              <span class="product__opener">Uma estrutura que acompanha a exigência da sua operação.</span>
+            </summary>
+            <div class="product__body">
+              <div class="product__art" aria-hidden="true">
+<svg viewBox="0 0 200 140" focusable="false">
+  <g fill="#1a1a1f" stroke="rgba(255,255,255,0.22)">
+    <rect x="40" y="28" width="120" height="26" rx="4"/><rect x="40" y="58" width="120" height="26" rx="4"/><rect x="40" y="88" width="120" height="26" rx="4"/>
+  </g>
+  <g fill="#ff6418"><circle cx="52" cy="41" r="2.2"/><circle cx="52" cy="71" r="2.2"/><circle cx="52" cy="101" r="2.2"/></g>
+  <g stroke="rgba(255,255,255,0.14)"><path d="M64 41h70M64 71h50M64 101h60"/></g>
+  <rect class="pa pa--sweep" x="-60" y="22" width="40" height="100" fill="rgba(255,255,255,0.14)" transform="skewX(-16)"/>
+  <rect class="pa pa--frame" x="34" y="22" width="132" height="98" rx="8" fill="none" stroke="#ff6418" stroke-width="2"/>
+</svg>
+              </div>
+              <div class="product__text">
+                <p class="product__kicker">03 · Servidor dedicado</p>
+                <h3 class="product__title">Uma estrutura que acompanha a exigência da sua operação.</h3>
+                <p class="product__desc">Hardware e capacidade configurados para o seu caso, com recursos exclusivos e controle do ambiente. Segurança física e digital do data center e suporte técnico da equipe que opera a estrutura.</p>
+                <ul class="product__features" aria-label="Recursos">
+                <li>Recursos exclusivos, sem compartilhamento</li>
+                <li>Hardware e capacidade configuráveis</li>
+                <li>Controle do ambiente</li>
+                <li>Segurança física e digital</li>
+                <li>Suporte técnico</li>
+                </ul>
+                <p class="product__note">Condições e configurações em proposta personalizada.</p>
+                <div class="product__actions">
+                  <a class="btn btn--primary" href="https://api.whatsapp.com/send?phone=553140404888&amp;text=Ol%C3%A1%21%20Quero%20uma%20proposta%20de%20servidor%20dedicado%20na%20OneX." target="_blank" rel="noopener" data-wa="dedicado"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3Z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 1a4 4 0 0 1-2-2l1-1-1-2Z"/></svg>Conversar no WhatsApp<span class="visually-hidden"> sobre Servidor dedicado (abre em nova aba)</span></a>
+                  <a class="link-arrow" href="https://onexdc.com.br/produtos/servidores-dedicados/" target="_blank" rel="noopener" data-link="dedicated">Página oficial de servidores dedicados <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg><span class="visually-hidden">(abre em nova aba)</span></a>
+                </div>
+              </div>
+            </div>
+          </details>
+          <details class="product" id="produto-colocation" data-product="colocation">
+            <summary class="product__summary">
+              <span class="product__num">04</span>
+              <span class="product__name">Colocation</span>
+              <span class="product__opener">Seu equipamento. Um novo endereço para operar.</span>
+            </summary>
+            <div class="product__body">
+              <div class="product__art" aria-hidden="true">
+<svg viewBox="0 0 200 140" focusable="false">
+  <rect x="58" y="14" width="84" height="112" rx="6" fill="#141418" stroke="rgba(255,255,255,0.22)"/>
+  <g stroke="rgba(255,255,255,0.1)"><path d="M66 32h68M66 52h68M66 72h68M66 92h68M66 112h68"/></g>
+  <rect class="pa pa--dock" style="--i:0" x="66" y="36" width="68" height="14" rx="2" fill="#26262d" stroke="#ff6418" stroke-width="1.2"/>
+  <rect class="pa pa--dock" style="--i:1" x="66" y="56" width="68" height="14" rx="2" fill="#26262d" stroke="#ff6418" stroke-width="1.2"/>
+  <rect class="pa pa--dock" style="--i:2" x="66" y="76" width="68" height="14" rx="2" fill="#26262d" stroke="#ff6418" stroke-width="1.2"/>
+  <g fill="#ff8a45"><circle class="pa pa--pop" cx="72" cy="43" r="1.8"/><circle class="pa pa--pop" cx="72" cy="63" r="1.8"/><circle class="pa pa--pop" cx="72" cy="83" r="1.8"/></g>
+</svg>
+              </div>
+              <div class="product__text">
+                <p class="product__kicker">04 · Colocation</p>
+                <h3 class="product__title">Seu equipamento. Um novo endereço para operar.</h3>
+                <p class="product__desc">Você traz o seu servidor físico; a OneX fornece espaço em rack, energia redundante, refrigeração e conectividade. O controle do hardware e do software continua com você, e o data center pode ser visitado com agendamento para manutenção ou inspeção.</p>
+                <ul class="product__features" aria-label="Recursos">
+                <li>Espaço em rack</li>
+                <li>Energia redundante</li>
+                <li>Refrigeração</li>
+                <li>Conectividade</li>
+                <li>Hardware exclusivo, sem impacto de outros clientes</li>
+                <li>Smart Hands sob demanda</li>
+                </ul>
+                <div class="product__actions">
+                  <a class="btn btn--primary" href="https://api.whatsapp.com/send?phone=553140404888&amp;text=Ol%C3%A1%21%20Quero%20conversar%20sobre%20colocation%20do%20meu%20equipamento%20na%20OneX." target="_blank" rel="noopener" data-wa="colocation"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3Z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 1a4 4 0 0 1-2-2l1-1-1-2Z"/></svg>Conversar no WhatsApp<span class="visually-hidden"> sobre Colocation (abre em nova aba)</span></a>
+                  <a class="link-arrow" href="https://onexdc.com.br/produtos/" target="_blank" rel="noopener" data-link="catalog">Ver no catálogo oficial <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg><span class="visually-hidden">(abre em nova aba)</span></a>
+                </div>
+              </div>
+            </div>
+          </details>
+          <details class="product" id="produto-telefonia" data-product="telefonia">
+            <summary class="product__summary">
+              <span class="product__num">05</span>
+              <span class="product__name">Telefonia</span>
+              <span class="product__opener">A conversa continua, onde sua equipe estiver.</span>
+            </summary>
+            <div class="product__body">
+              <div class="product__art" aria-hidden="true">
+<svg viewBox="0 0 200 140" focusable="false">
+  <rect x="24" y="52" width="40" height="36" rx="6" fill="#1a1a1f" stroke="rgba(255,255,255,0.22)"/>
+  <rect x="136" y="30" width="40" height="36" rx="6" fill="#1a1a1f" stroke="rgba(255,255,255,0.22)"/>
+  <rect x="136" y="74" width="40" height="36" rx="6" fill="#1a1a1f" stroke="rgba(255,255,255,0.22)"/>
+  <path class="pa pa--draw" d="M64 70H92L112 48H136M92 70L112 92H136" fill="none" stroke="#ff6418" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle class="pa pa--pop" cx="92" cy="70" r="4" fill="#ff8a45"/>
+  <circle class="pa pa--pop" cx="136" cy="48" r="3" fill="#ff8a45"/>
+  <circle class="pa pa--pop" cx="136" cy="92" r="3" fill="#ff8a45"/>
+</svg>
+              </div>
+              <div class="product__text">
+                <p class="product__kicker">05 · Telefonia</p>
+                <h3 class="product__title">A conversa continua, onde sua equipe estiver.</h3>
+                <p class="product__desc">Telefonia pela internet: a conexão liga o PABX e os ramais, e a equipe atende de onde estiver, com terminais IP ou no computador. Integra com o PABX que a empresa já usa.</p>
+                <ul class="product__features" aria-label="Recursos">
+                <li>Chamadas pela internet</li>
+                <li>Mobilidade para a equipe</li>
+                <li>Integração com PABX</li>
+                <li>Terminais IP</li>
+                </ul>
+                <p class="product__note">Planos e abrangência das chamadas são definidos em consulta.</p>
+                <div class="product__actions">
+                  <a class="btn btn--primary" href="https://api.whatsapp.com/send?phone=553140404888&amp;text=Ol%C3%A1%21%20Quero%20conversar%20sobre%20telefonia%20VoIP%20na%20OneX." target="_blank" rel="noopener" data-wa="telefonia"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3Z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 1a4 4 0 0 1-2-2l1-1-1-2Z"/></svg>Conversar no WhatsApp<span class="visually-hidden"> sobre Telefonia (abre em nova aba)</span></a>
+                  <a class="link-arrow" href="https://onexdc.com.br/produtos/telefonia-voip/" target="_blank" rel="noopener" data-link="voip">Página oficial de telefonia VoIP <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg><span class="visually-hidden">(abre em nova aba)</span></a>
+                </div>
+              </div>
+            </div>
+          </details>
+          <details class="product" id="produto-email" data-product="email">
+            <summary class="product__summary">
+              <span class="product__num">06</span>
+              <span class="product__name">Email profissional</span>
+              <span class="product__opener">O nome da sua empresa em cada mensagem.</span>
+            </summary>
+            <div class="product__body">
+              <div class="product__art" aria-hidden="true">
+<svg viewBox="0 0 200 140" focusable="false">
+  <rect x="40" y="36" width="120" height="76" rx="8" fill="#1a1a1f" stroke="rgba(255,255,255,0.22)"/>
+  <path class="pa pa--draw" d="M44 44l56 42 56-42" fill="none" stroke="#ff6418" stroke-width="2" stroke-linejoin="round"/>
+  <rect class="pa pa--tag" x="112" y="90" width="64" height="20" rx="10" fill="#ff6418"/>
+  <rect class="pa pa--tag" x="122" y="98" width="30" height="4" rx="2" fill="#120700"/>
+</svg>
+              </div>
+              <div class="product__text">
+                <p class="product__kicker">06 · Email profissional</p>
+                <h3 class="product__title">O nome da sua empresa em cada mensagem.</h3>
+                <p class="product__desc">Endereços com o domínio da sua empresa, hospedados na OneX, com filtragem antispam, antivírus e conexão segura. Funciona no cliente de e-mail que a equipe já usa.</p>
+                <ul class="product__features" aria-label="Recursos">
+                <li>Domínio próprio (@suaempresa.com.br)</li>
+                <li>Antispam e antivírus</li>
+                <li>10 GB por usuário</li>
+                <li>Segurança SSL</li>
+                <li>POP3 e IMAP</li>
+                <li>Suporte proativo</li>
+                </ul>
+                <div class="product__actions">
+                  <a class="btn btn--primary" href="https://api.whatsapp.com/send?phone=553140404888&amp;text=Ol%C3%A1%21%20Quero%20conversar%20sobre%20e-mail%20profissional%20na%20OneX." target="_blank" rel="noopener" data-wa="email"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3Z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 1a4 4 0 0 1-2-2l1-1-1-2Z"/></svg>Conversar no WhatsApp<span class="visually-hidden"> sobre Email profissional (abre em nova aba)</span></a>
+                  <a class="link-arrow" href="https://onexdc.com.br/produtos/" target="_blank" rel="noopener" data-link="catalog">Ver no catálogo oficial <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg><span class="visually-hidden">(abre em nova aba)</span></a>
+                </div>
+              </div>
+            </div>
+          </details>
+        </div>
+        </div>
+
+        <div class="complement reveal">
+          <p class="complement__lead">Serviços complementares</p>
+          <div class="complement__items">
+            <div class="complement__item">
+              <h3>Hospedagem</h3>
+              <p>Site da empresa hospedado na OneX, com IP dedicado, estrutura monitorada 24/7 e suporte técnico.</p>
+              <a class="link-arrow" href="https://api.whatsapp.com/send?phone=553140404888&amp;text=Ol%C3%A1%21%20Quero%20conversar%20sobre%20hospedagem%20de%20site%20na%20OneX." target="_blank" rel="noopener" data-wa="hospedagem">Conversar sobre hospedagem <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg><span class="visually-hidden">(abre o WhatsApp em nova aba)</span></a>
+            </div>
+            <div class="complement__item">
+              <h3>Smart Hands</h3>
+              <p>Técnicos da OneX executam, sob demanda, instalação de hardware, reconfiguração e verificação física de equipamentos no data center.</p>
+              <a class="link-arrow" href="https://api.whatsapp.com/send?phone=553140404888&amp;text=Ol%C3%A1%21%20Quero%20saber%20sobre%20o%20servi%C3%A7o%20de%20Smart%20Hands%20da%20OneX." target="_blank" rel="noopener" data-wa="smart-hands">Conversar sobre Smart Hands <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg><span class="visually-hidden">(abre o WhatsApp em nova aba)</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== PROTEÇÃO E CONTINUIDADE ============================== -->
+    <section class="section protect" id="protecao" aria-labelledby="protecao-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Proteção e continuidade</p>
+          <h2 id="protecao-title">O que mantém sua operação seguindo em frente?</h2>
+          <p class="lead">Para a OneX, proteger o amanhã é cuidar de três camadas ao mesmo tempo: quem acessa e conversa, os dados e suas cópias, e a estrutura com gente por perto.</p>
+        </div>
+
+        <div class="protect__grid">
+          <div class="protect__art reveal" id="protect-art" aria-hidden="true">
+            <svg viewBox="0 0 420 420" focusable="false">
+              <defs>
+                <linearGradient id="g-layer" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#26262d"/><stop offset="1" stop-color="#101013"/></linearGradient>
+              </defs>
+              <g class="protect__plate" style="--i:2">
+                <polygon points="70,290 250,290 350,370 170,370" fill="#0a0a0c" stroke="rgba(255,255,255,0.1)"/>
+                <polygon points="70,280 250,280 350,360 170,360" fill="url(#g-layer)" stroke="rgba(255,255,255,0.18)"/>
+              </g>
+              <g class="protect__plate" style="--i:1">
+                <polygon points="70,200 250,200 350,280 170,280" fill="#0a0a0c" stroke="rgba(255,255,255,0.1)"/>
+                <polygon points="70,190 250,190 350,270 170,270" fill="url(#g-layer)" stroke="rgba(255,255,255,0.18)"/>
+              </g>
+              <g class="protect__plate" style="--i:0">
+                <polygon points="70,110 250,110 350,190 170,190" fill="#0a0a0c" stroke="rgba(255,255,255,0.1)"/>
+                <polygon points="70,100 250,100 350,180 170,180" fill="url(#g-layer)" stroke="rgba(255,255,255,0.18)"/>
+              </g>
+              <path class="protect__line" d="M260 140H330L370 100H410"/>
+              <path class="protect__line" d="M260 230H340L380 190H410"/>
+              <path class="protect__line" d="M260 320H350L390 280H410"/>
+              <g fill="#ff6418">
+                <circle class="protect__dot" cx="260" cy="140" r="4"/><circle class="protect__dot" cx="260" cy="230" r="4"/><circle class="protect__dot" cx="260" cy="320" r="4"/>
+              </g>
+              <path class="protect__spine" d="M260 140V320" />
+            </svg>
+          </div>
+
+          <ol class="protect__layers">
+            <li class="protect__layer reveal">
+              <span class="protect__num">01</span>
+              <div>
+                <h3>Acesso e comunicação</h3>
+                <p>Endereços de e-mail com antispam, antivírus e conexão SSL, telefonia que acompanha a equipe e uma nuvem corporativa com conformidade LGPD.</p>
+                <p class="protect__with"><span>Com</span> Email profissional · Telefonia · OneXcloud</p>
+              </div>
+            </li>
+            <li class="protect__layer reveal">
+              <span class="protect__num">02</span>
+              <div>
+                <h3>Dados e cópias</h3>
+                <p>Backup incluso no OneXcloud. Nos servidores em nuvem, backup automatizado com retenção configurável, definido em contrato. Os dados ficam em Minas Gerais, em endereço que você pode visitar.</p>
+                <p class="protect__with"><span>Com</span> OneXcloud · VPS · Servidor dedicado</p>
+              </div>
+            </li>
+            <li class="protect__layer reveal">
+              <span class="protect__num">03</span>
+              <div>
+                <h3>Estrutura e equipe</h3>
+                <p>Energia redundante, refrigeração e conectividade em data centers próprios, com suporte 24 horas, 7 dias por semana, e a equipe técnica que opera a estrutura na linha.</p>
+                <p class="protect__with"><span>Com</span> Colocation · Servidor dedicado · VPS</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+
+        <p class="protect__more reveal"><a class="link-arrow" href="#infraestrutura">Conheça o lugar e as pessoas <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+      </div>
+    </section>
+
+    <!-- ============================== INFRAESTRUTURA E LOCALIDADES ============================== -->
+    <section class="section infra" id="infraestrutura" aria-labelledby="infra-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Infraestrutura</p>
+          <h2 id="infra-title">Seus dados têm endereço.</h2>
+          <p class="lead">Data centers próprios em Ipatinga e Belo Horizonte, com energia redundante, refrigeração e conectividade. Antes de contratar, você pode visitar, conhecer a sala e conversar com quem opera.</p>
+        </div>
+
+        <div class="places">
+          <article class="place reveal">
+            <span class="mono">Vale do Aço</span>
+            <h3>Ipatinga</h3>
+            <address>R. Eucaliptos, 220 – Horto<br>Ipatinga – MG, 35160-297</address>
+            <a class="btn btn--sm" href="https://api.whatsapp.com/send?phone=553140404888&amp;text=Ol%C3%A1%21%20Quero%20agendar%20uma%20visita%20ao%20data%20center%20da%20OneX%20em%20Ipatinga." target="_blank" rel="noopener" data-wa="visita-ipatinga">Agendar visita em Ipatinga<span class="visually-hidden"> (WhatsApp, abre em nova aba)</span></a>
+          </article>
+          <article class="place reveal">
+            <span class="mono">Região metropolitana</span>
+            <h3>Belo Horizonte</h3>
+            <address>Rua Ituiutaba, 340 – Prado<br>Belo Horizonte – MG, 30411-023</address>
+            <a class="btn btn--sm" href="https://api.whatsapp.com/send?phone=553140404888&amp;text=Ol%C3%A1%21%20Quero%20agendar%20uma%20visita%20ao%20data%20center%20da%20OneX%20em%20Belo%20Horizonte." target="_blank" rel="noopener" data-wa="visita-bh">Agendar visita em Belo Horizonte<span class="visually-hidden"> (WhatsApp, abre em nova aba)</span></a>
+          </article>
+          <aside class="place-facts reveal" aria-label="O que a estrutura oferece">
+            <ul>
+              <li>Infraestrutura própria, operada pela OneX</li>
+              <li>Energia redundante, refrigeração e conectividade</li>
+              <li>Estrutura em operação 24 horas, 7 dias, feriados incluídos</li>
+              <li>Visitas agendadas para manutenção ou inspeção</li>
+              <li>Contratos a partir de 12 meses</li>
+              <li>Smart Hands sob demanda</li>
+            </ul>
+          </aside>
+          <div class="places__mark" aria-hidden="true">
+            <svg viewBox="637 0 229 192" focusable="false"><g fill="none" stroke="rgba(255,100,24,0.35)" stroke-width="1.5" fill-rule="evenodd"><use href="#lg-x"/></g></svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== EQUIPE E HISTÓRIA ============================== -->
+    <section class="section team" id="sobre" aria-labelledby="sobre-title">
+      <div class="container team__grid">
+        <figure class="team__photo reveal">
+          <img src="assets/photos/onex-equipe-4x5.webp" width="768" height="960" alt="Equipe da OneX reunida na escada do escritório, em Minas Gerais." loading="lazy">
+          <figcaption>Equipe OneX. Foto publicada no site oficial.</figcaption>
+        </figure>
+        <div class="team__text">
+          <p class="eyebrow">Equipe e história</p>
+          <h2 id="sobre-title">Nasceu da necessidade de ter infraestrutura por perto.</h2>
+          <p class="reveal">A OneX surgiu de uma necessidade real: empresas do Vale do Aço e da Grande BH precisavam de infraestrutura de TI profissional sem depender de data centers de São Paulo ou do Rio. A resposta foi montar estrutura própria em Ipatinga e Belo Horizonte e operar com uma equipe que o cliente conhece pelo nome.</p>
+          <ul class="team__points reveal">
+            <li><strong>Engenheiro na linha.</strong> Na primeira ligação, quem atende é da equipe técnica que opera a estrutura.</li>
+            <li><strong>Você pode ver seu servidor.</strong> Os data centers têm porta, endereço e horário para visita.</li>
+            <li><strong>Uma equipe, um contrato, uma nota fiscal.</strong> OneXcloud, VPS, servidor dedicado, colocation, telefonia e e-mail com o mesmo fornecedor.</li>
+          </ul>
+          <blockquote class="team__quote reveal">
+            <p>“Depois que trouxemos nosso servidor para a OneX Data Centers, nós ganhamos em vazão e expansão.”</p>
+            <footer>Guilherme Cruz, CEO da ForDoctor Contabilidade · depoimento publicado em onexdc.com.br</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== DÚVIDAS DE CONTRATAÇÃO ============================== -->
+    <section class="section faq" id="perguntas" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="faq__grid">
+          <div class="reveal">
+            <p class="eyebrow">Dúvidas de contratação</p>
+            <h2 id="faq-title">Antes de fechar, as perguntas que mais chegam.</h2>
+            <p class="lead">Respostas com base no que a OneX publica. Prazos, disponibilidade contratada e condições específicas são confirmados na proposta.</p>
+          </div>
+
+          <div class="faq__list reveal">
+            <details class="faq__item">
+              <summary>Posso visitar o data center?</summary>
+              <div class="faq__body"><p>Sim. Agendando com a equipe, você pode ir pessoalmente ao data center, em Ipatinga ou em Belo Horizonte, para conhecer a estrutura, fazer manutenção ou inspecionar o seu equipamento.</p></div>
+            </details>
+            <details class="faq__item">
+              <summary>Qual é o contrato mínimo?</summary>
+              <div class="faq__body"><p>A OneX trabalha com contratos a partir de 12 meses. As condições de cada serviço, inclusive disponibilidade, ficam registradas no contrato.</p></div>
+            </details>
+            <details class="faq__item">
+              <summary>No colocation, meu servidor divide recursos com outros clientes?</summary>
+              <div class="faq__body"><p>Não. No colocation o hardware é seu e exclusivo; a OneX fornece espaço em rack, energia, refrigeração e conectividade. Outros clientes não impactam o seu equipamento.</p></div>
+            </details>
+            <details class="faq__item">
+              <summary>Qual a diferença entre VPS, servidor dedicado e OneXcloud?</summary>
+              <div class="faq__body"><p>O VPS é uma máquina virtual com recursos definidos, para hospedar aplicações. O servidor dedicado é hardware exclusivo, configurado para a sua operação. O OneXcloud é a nuvem de colaboração da equipe: arquivos, calendários e contatos sincronizados, com backup incluso.</p></div>
+            </details>
+            <details class="faq__item">
+              <summary>Como funciona uma migração para a OneX?</summary>
+              <div class="faq__body"><p>A equipe técnica levanta o ambiente atual, define a ordem dos serviços e uma janela de execução, e acompanha a mudança. Prazos dependem do que será migrado e são combinados na proposta.</p></div>
+            </details>
+            <details class="faq__item">
+              <summary>Como funciona o suporte?</summary>
+              <div class="faq__body"><p>A estrutura opera 24 horas por dia, 7 dias por semana, incluindo feriados. Quem atende é a equipe técnica que opera o data center; os serviços da sua conta ficam no Painel Nimbus.</p></div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== CONTATO ============================== -->
+    <section class="section contact" id="contato" aria-labelledby="contato-title">
+      <div class="container">
+        <div class="contact__grid">
+          <div class="reveal">
+            <p class="eyebrow">Contato</p>
+            <h2 id="contato-title">Fale com a OneX.</h2>
+            <p class="lead">Conte o que você precisa hospedar, expandir ou conectar. A conversa começa no WhatsApp, por telefone ou por e-mail, com a equipe que opera a estrutura.</p>
+
+            <fieldset class="contact__pick">
+              <legend>Sobre o que você quer falar?</legend>
+              <div class="contact__chips">
+                <label class="chip"><input type="radio" name="assunto" value="onexcloud"><span>OneXcloud</span></label>
+                <label class="chip"><input type="radio" name="assunto" value="vps"><span>VPS</span></label>
+                <label class="chip"><input type="radio" name="assunto" value="dedicado"><span>Servidor dedicado</span></label>
+                <label class="chip"><input type="radio" name="assunto" value="colocation"><span>Colocation</span></label>
+                <label class="chip"><input type="radio" name="assunto" value="telefonia"><span>Telefonia</span></label>
+                <label class="chip"><input type="radio" name="assunto" value="email"><span>Email profissional</span></label>
+                <label class="chip"><input type="radio" name="assunto" value="visita-ipatinga"><span>Visita em Ipatinga</span></label>
+                <label class="chip"><input type="radio" name="assunto" value="visita-bh"><span>Visita em Belo Horizonte</span></label>
+                <label class="chip"><input type="radio" name="assunto" value="outro"><span>Outro assunto</span></label>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="contact__ways reveal">
+            <a class="btn btn--primary btn--lg" id="wa-main" href="https://api.whatsapp.com/send?phone=553140404888&amp;text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20OneX%20e%20quero%20conversar%20sobre%20infraestrutura%20para%20a%20minha%20empresa." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3Z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 1a4 4 0 0 1-2-2l1-1-1-2Z"/></svg>Conversar no WhatsApp<span class="visually-hidden"> (abre em nova aba)</span></a>
+            <p class="contact__hint" id="wa-hint">Abre o WhatsApp oficial da OneX com uma mensagem pronta. Você revisa e envia.</p>
+
+            <ul class="contact__channels" aria-label="Outros canais">
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h3.5l1.5 4-2 1.5a11 11 0 0 0 6.5 6.5L16 14l4 1.5V19a2 2 0 0 1-2 2A15 15 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg>
+                <div><span class="mono">Telefone</span><a href="tel:+553140404888" data-link="phone">(31) 4040-4888</a></div>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg>
+                <div><span class="mono">E-mail</span><a href="mailto:contato@onexdatacenter.com.br" data-link="email">contato@onexdatacenter.com.br</a></div>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4z"/><path d="M8 9h8M8 13h5"/></svg>
+                <div><span class="mono">Formulário oficial</span><a href="https://onexdc.com.br/fale-conosco/" target="_blank" rel="noopener" data-link="contactPage">onexdc.com.br/fale-conosco<span class="visually-hidden"> (abre em nova aba)</span></a></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================== RODAPÉ ============================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <svg viewBox="0 0 866 250" role="img" aria-label="OneX Data Center" focusable="false">
+            <g fill="#F5F5F5"><use href="#lg-full"/></g>
+          </svg>
+          <p>Conectamos hoje e protegemos o amanhã. Data centers próprios em Ipatinga e Belo Horizonte: OneXcloud, VPS, servidor dedicado, colocation, telefonia e e-mail profissional.</p>
+        </div>
+
+        <div>
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="#solucoes">Soluções</a></li>
+            <li><a href="#protecao">Proteção e continuidade</a></li>
+            <li><a href="#infraestrutura">Infraestrutura</a></li>
+            <li><a href="#sobre">Equipe e história</a></li>
+            <li><a href="#perguntas">Dúvidas de contratação</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Onde estamos</h4>
+          <address><strong>Ipatinga</strong>R. Eucaliptos, 220 – Horto<br>35160-297</address>
+          <address><strong>Belo Horizonte</strong>Rua Ituiutaba, 340 – Prado<br>30411-023</address>
+          <p class="footer__phone"><a href="tel:+553140404888" data-link="phone">(31) 4040-4888</a></p>
+        </div>
+
+        <div>
+          <h4>Acesso e canais</h4>
+          <ul>
+            <li><a href="https://nimbus.onexdatacenter.com.br/" target="_blank" rel="noopener" data-link="nimbus">Painel Nimbus <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg><span class="visually-hidden">(abre em nova aba)</span></a></li>
+            <li><a href="https://app.nimbus.onexdatacenter.com.br/" target="_blank" rel="noopener" data-link="register">Criar cadastro <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg><span class="visually-hidden">(abre em nova aba)</span></a></li>
+            <li><a href="https://onexdc.com.br/blog/" target="_blank" rel="noopener" data-link="blog">Blog <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg><span class="visually-hidden">(abre em nova aba)</span></a></li>
+            <li><a href="https://www.instagram.com/onexdc/" target="_blank" rel="noopener" data-link="instagram">Instagram <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg><span class="visually-hidden">(abre em nova aba)</span></a></li>
+            <li><a href="https://www.facebook.com/onexdcenter/" target="_blank" rel="noopener" data-link="facebook">Facebook <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg><span class="visually-hidden">(abre em nova aba)</span></a></li>
+            <li><a href="https://www.linkedin.com/company/onex-dc/" target="_blank" rel="noopener" data-link="linkedin">LinkedIn <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg><span class="visually-hidden">(abre em nova aba)</span></a></li>
+            <li><button type="button" id="btn-replay" data-replay-intro>Rever abertura <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><path d="M4 12a8 8 0 1 0 2.3-5.7M4 4v4.5h4.5"/></svg></button></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>OneX Data Center · Ipatinga e Belo Horizonte, MG</p>
+        <p><a href="https://onexdc.com.br/politicas-de-privacidade/" target="_blank" rel="noopener" data-link="privacy">Política de privacidade</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Overlay da intro: só é ativado pelo JavaScript -->
+  <div class="intro" id="intro" tabindex="-1" hidden data-stage="idle" role="dialog" aria-modal="true" aria-label="Abertura OneX Data Center">
+    <div class="intro__bg" aria-hidden="true"></div>
+    <div class="intro__stage" id="intro-stage">
+      <div class="intro__persp" id="intro-persp"></div>
+    </div>
+    <p class="intro__caption" aria-hidden="true">Conexões que ativam a infraestrutura</p>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/intro.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
